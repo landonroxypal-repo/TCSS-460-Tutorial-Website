@@ -1,0 +1,2 @@
+Place your downloaded local images for Exercise 1 in this folder.
+Document every image source in README.txt.
