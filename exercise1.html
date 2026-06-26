@@ -12,109 +12,264 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100 min-h-screen px-4 py-10">
+<body class="bg-gray-800 min-h-screen px-4 py-10">
 
   <main class="max-w-6xl mx-auto">
 
-    <!-- Header / Profile Card -->
-     <header class="bg-white rounded-x1 shadow-lg border border-gray
-    -200 p-6 mb-6">
+     <!-- TODO: Fix navigation links! -->
 
-          <!-- Profile Info -->
+    <!-- Header -->
+     <header class="bg-gray-900 rounded-x1 shadow-lg border border-slate-950 p-6 mb-6 rounded-lg">
           <div class="flex flex-col sm:flex-row sm:items-center gap-5 mb-6">
                <div>
-                    <h1 class="text-4xl font-bold text-green-700">
-                         Git and GitHub
+                    <span class="text-green-500 font-bold">
+                         MINI TUTORIAL
+                    </span>
+
+                    <h1 class="text-4xl font-bold text-green-50 mt-2 mb-2 leading-tight">
+                         Git & GitHub: Software Version Control
                     </h1>
 
-                    <p class="text-gray-700 mt-2 leading-relaxed max-w-3xl">
-                         A quick guide to introduce readers to a Git and GitHub as
+                    <p class="text-gray-50 mt-2 leading-relaxed max-w-3xl">
+                         A quick guide to introduce readers to Git and GitHub as
                          software version control solutions.
+                    </p>
+
+                    <p class="text-sm text-gray-400 font-light mt-2 leading-relaxed max-w-3xl">
+                         Created by Landon Wardle for TCSS 460
                     </p>
                </div>
           </div>          
           
           <!-- Navigation -->
           <nav class="flex flex-wrap gap-3 text-sm font-semibold 
-           border-t border-gray-100 pt-4">
-               <a href="#" class="bg-green-50 text-green-700 px-4 py-2 
-               rounded-lg hover:bg-green-100">
+           border-t border-slate-950 pt-4">
+               <a href="#" class="bg-gray-950 text-green-500 px-4 py-2 
+               rounded-lg hover:bg-gray-800">
                     Overview
                </a>   
 
-               <a href="#" class="bg-green-50 text-green-700 px-4 py-2 
-               rounded-lg hover:bg-green-100">
+               <a href="#" class="bg-gray-950 text-green-500 px-4 py-2 
+               rounded-lg hover:bg-gray-800">
                     Concepts
                </a> 
 
-               <a href="#" class="bg-green-50 text-green-700 px-4 py-2 
-               rounded-lg hover:bg-green-100">
+               <a href="#" class="bg-gray-950 text-green-500 px-4 py-2 
+               rounded-lg hover:bg-gray-800">
                     Images
                </a>     
 
-               <a href="#" class="bg-green-50 text-green-700 px-4 py-2 
-               rounded-lg hover:bg-green-100">
+               <a href="#" class="bg-gray-950 text-green-500 px-4 py-2 
+               rounded-lg hover:bg-gray-800">
                     Video
                </a> 
 
-               <a href="#" class="bg-green-50 text-green-700 px-4 py-2 
-               rounded-lg hover:bg-green-100">
+               <a href="#" class="bg-gray-950 text-green-500 px-4 py-2 
+               rounded-lg hover:bg-gray-800">
                     Resources
                </a>     
           </nav>
-
      </header> 
 
+     <!-- What are Git and GitHub? -->
+     <section class="bg-gray-950 rounded-xl border border-green-900 
+     p-6 mb-6 text-left">
+          <h2 class="text-3xl font-bold text-green-500 mb-6">
+               What are Git and GitHub?
+          </h2>
 
-    <!-- =========================================================
-         STEP 2: Add the "What is this topic?" section here.
-         Include:
-         - heading
-         - short explanation in your own words
-         - one highlighted phrase using <span>
-         ========================================================= -->
+          <p class="text-gray-50 mx-auto leading-relaxed mb-5">
+               Git is a distributed version control system that tracks changes in files and coordinates work among multiple developers. 
+               GitHub
+               <span class="font-bold italic text-green-400">
+                    [THIS WAS WRITTEN BY AI, REWRITE!]
+               </span>
+               is a web-based platform that hosts Git repositories and provides additional collaboration features.
+          </p>
+     </section>
 
+     <!-- Why it matters -->
+     <section class="bg-gray-900 rounded-x1 shadow-lg border border-slate-950 p-6 mb-6 rounded-lg">
+          <h2 class="text-2xl font-bold text-green-500 mb-3">
+               Why Git and GitHub Matter
+          </h2>
 
+          <ul class="text-gray-50 list-disc list-inside space-y-3 leading-relaxed">
+               <li>Amazing fact one</li>
+               <li>Amazing fact two</li>
+               <li>Amazing fact three</li>
+          </ul>
+     </section>
 
-    <!-- =========================================================
-         STEP 3: Add the "Why it matters" section here.
-         Include:
-         - heading
-         - 3 bullet points
-         - Tailwind styling for the section
-         ========================================================= -->
+     <!-- Key Concepts Cards -->
+     <section class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-6">
+          <article class="bg-gray-900 rounded-xl shadow border border-purple-900
+          p-6 hover:shadow-xl transition duration-200">
+               <span class="inline-block bg-purple-100 text-purple-700 text-sm
+               font-semibold px-3 py-1 rounded-full mb-4">
+                    Concept 1
+               </span>
 
+               <h3 class="text-xl font-bold text-purple-400 mb-6">
+                    Shared Repositories
+               </h3>
 
+               <p class="text-white leading relaxed mb-4">
+                    Shared repositories allow multiple developers to collaborate on a project by providing a central location for code storage and version control.
+                    [WRITTEN BY AI, REWRITE!]
+               </p>
+          </article>
 
-    <!-- =========================================================
-         STEP 4: Add the Key Concepts card grid here.
-         Include:
-         - 3 cards
-         - each card should include a title and explanation
-         - use responsive grid classes such as md:grid-cols-3
-         ========================================================= -->
+          <article class="bg-gray-900 rounded-xl shadow border border-green-900
+          p-6 hover:shadow-xl transition duration-200">
+               <span class="inline-block bg-green-100 text-green-700 text-sm
+               font-semibold px-3 py-1 rounded-full mb-4">
+                    Concept 2
+               </span>
 
+               <h3 class="text-xl font-bold text-green-400 mb-6">
+                    Commit History
+               </h3>
 
+               <p class="text-white leading relaxed mb-4">
+                    Commit history tracks all changes made to a repository, allowing developers to view and revert to previous versions of the code.
+                    [WRITTEN BY AI, REWRITE!]
+               </p>
+          </article>
 
-    <!-- =========================================================
-         STEP 5: Add the Image Gallery section here.
-         Include:
-         - at least 2 local images from your images/ folder
-         - meaningful alt text
-         - captions or short explanations
-         ========================================================= -->
+          <article class="bg-gray-900 rounded-xl shadow border border-blue-900
+          p-6 hover:shadow-xl transition duration-200">
+               <span class="inline-block bg-blue-100 text-blue-700 text-sm
+               font-semibold px-3 py-1 rounded-full mb-4">
+                    Concept 3
+               </span>
 
+               <h3 class="text-xl font-bold text-blue-400 mb-6">
+                    Branching and Merging
+               </h3>
 
+               <p class="text-white leading relaxed mb-4">
+                    Branching and merging allow developers to work on different versions of a repository simultaneously and integrate their changes later.
+                    [WRITTEN BY AI, REWRITE!]
+               </p>
+          </article>
+     </section>
 
-    <!-- =========================================================
-         STEP 6: Add the Recommended Video Resource section here.
-         Include:
-         - a styled card or section for a YouTube video
-         - a working link that opens the video in a new tab
-         - a short paragraph explaining why the video is useful
-         ========================================================= -->
+      <!-- Image Gallery -->
+     <section class="bg-gray-900 rounded-x1 shadow-lg border border-slate-950 p-6 mb-6 rounded-lg">
+          <h2 class="text-2xl font-bold text-green-500 mb-3">
+               Image Examples
+          </h2>
 
+          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-6">
+               <article class="bg-gray-900 rounded-xl border border-purple-900
+               p-6 hover:shadow-xl transition duration-200">
+                         <img
+                         src="images/GitLogo.jpg"
+                         alt="Diagram showing client-server communication"
+                         class="w-full rounded-lg mb-4">
 
+                         <p class="text-white bg-gray-950 p-2 rounded-lg">
+                              Image 1: Git Graph showing branches and commits
+                         </p>
+               </article>
+
+               <article class="bg-gray-900 rounded-xl border border-green-900
+               p-6 hover:shadow-xl transition duration-200">
+                         <img
+                         src="images/GitLogo.jpg"
+                         alt="Diagram showing client-server communication"
+                         class="w-full rounded-lg mb-4">
+
+                         <p class="text-white bg-gray-950 p-2 rounded-lg">
+                              Image 2: Commit History showing changes over time
+                         </p>
+               </article>
+
+               <article class="bg-gray-900 rounded-xl border border-blue-900
+               p-6 hover:shadow-xl transition duration-200">
+                         <img
+                         src="images/GitLogo.jpg"
+                         alt="Diagram showing client-server communication"
+                         class="w-full rounded-lg mb-4">
+
+                         <p class="text-white bg-gray-950 p-2 rounded-lg">
+                              Image 3: Repository Website showing branches and pull requests
+                         </p>
+               </article>
+          </div>
+     </section>
+
+     <!-- Video resource section -->
+     <section class="bg-gray-900 rounded-xl border border-slate-950
+     p-6 mb-6">
+          <span class="inline-block bg-green-100 text-green-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">
+               Recommended Video
+          </span>
+
+          <h2 class="text-2xl font-bold text-white mb-3">
+               [VIDEO TITLE HERE]
+          </h2>
+
+          <p class="text-gray-300 leading-relaxed mb-5">
+               Wow this is such an awesome video and it's amazing and stuff.
+          </p>
+
+          <span class="inline-block bg-green-100 text-green-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">
+               <h2 class="text-2xl font-bold text-white mb-3">
+                    [VIDEO TITLE HERE]
+               </h2>
+
+               <a
+               href="https://www.youtube.com/watch?v=t2Ecuu2FdC8"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="inline-block bg-green-600 text-white font-semibold 
+               px-6 py-3 rounded-lg hover:bg-green-700 transition duration-200">
+                    Watch Video on YouTube
+               </a>
+     </section>
+
+     <!-- Learning resources -->
+     <section class="bg-gray-900 rounded-x1 shadow-lg border border-slate-950 p-6 mb-6 rounded-lg">
+          <h2 class="text-2xl font-bold text-green-500 mb-3">
+               Learning Resources
+          </h2>
+
+          <ul class="text-gray-50 list-decimal list-inside space-y-3 leading-relaxed">
+               <li>
+                    <a
+                    href="https://www.youtube.com/watch?v=t2Ecuu2FdC8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-blue-500 font-semibold hover:underline">
+                         Name of resource
+                    </a>
+                    : Short description of the resource.
+               </li>
+               <li>
+                    <a
+                    href="https://www.youtube.com/watch?v=t2Ecuu2FdC8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-blue-500 font-semibold hover:underline">
+                         Name of resource
+                    </a>
+                    : Short description of the resource.
+               </li>
+               <li>
+                    <a
+                    href="https://www.youtube.com/watch?v=t2Ecuu2FdC8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-blue-500 font-semibold hover:underline">
+                         Name of resource
+                    </a>
+                    : Short description of the resource.
+               </li>
+          </ul>
+     </section>
+</section>
 
     <!-- =========================================================
          STEP 7: Add the Learning Resources section here.
@@ -132,7 +287,10 @@
          - attribution reminder
          ========================================================= -->
 
-
+     <!-- Footer -->
+     <footer class="text-center text-sm text-gray-500">
+          TCSS 460 - Exercise 1: Mini Tutorial Page for Git and GitHub. Sources are documented in README.txt.
+     </footer>
 
   </main>
 
